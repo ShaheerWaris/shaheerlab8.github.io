@@ -1,0 +1,253 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Search Styles */
+  .search {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .search h2,
+  .recipe-list h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .search-icon i {
+    color: #555;
+  }
+  
+  .search-form {
+    display: none;
+  }
+  
+  .search-form.active {
+    display: block;
+  }
+  
+  .search-form input[type="text"] {
+    width: 50%; /* Adjust the width as desired */
+    padding: 5px 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .search-form input[type="submit"] {
+    background-color: #1babbe;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  #cancel-btn {
+    margin-left: 10px;
+    display: none; /* Hide the cancel button initially */
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  #cancel-btn:hover {
+    background-color: darkred;
+  }
+  
+  /* Add Recipe section */
+  .add-recipe {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .add-recipe h2 {
+    margin-bottom: 10px;
+  }
+  
+  #recipe-form input[type="submit"],
+  #search-form input[type="submit"],
+  .recipe-actions button,
+  #pagination button {
+    background-color: #1babbe;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  #recipe-form input[type="submit"]:hover,
+  #search-form input[type="submit"]:hover,
+  .recipe-actions button:hover,
+  #pagination button:hover {
+    background-color: #007bff;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+  }
+  
+  /* Recipe List section */
+  .search {
+    margin-bottom: 20px;
+  }
+  
+  .search h2,
+  .recipe-list h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  #recipes li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  #recipes li h3 {
+    margin-top: 0;
+  }
+  
+  #recipes li img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-actions button {
+    margin-right: 5px;
+  }
+  
+  /* Pagination */
+  #pagination {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #pagination button {
+    margin-right: 5px;
+  }
+  
+  #pagination button.current-page {
+    background-color: #1babbe;
+  }
+  
+  /* Label styles */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Input form styles */
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #1babbe;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+  }
+  
+  input[type="submit"] {
+    transition: background-color 0.3s ease;
+  }
+  
+  form input[type="submit"] {
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slideUp 1s ease forwards;
+  }
+  
+  @keyframes slideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Heading styles */
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #777;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Additional styles */
+  #pagination button:nth-child(1) {
+    background-color: rgb(148, 148, 148);
+    margin: 0 auto;
+  }
+  
+  form {
+    width: 50%; /* Adjust the width as desired */
+    margin: 0 auto;
+  }
+  
+  /* Custom styles */
+  .add-space {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .cancel-btn {
+    margin-left: 10px;
+    display: none;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  .cancel-btn:hover {
+    background-color: darkred;
+  }
+  
